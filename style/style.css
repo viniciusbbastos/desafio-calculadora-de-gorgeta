@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10%;
+    justify-content: center;
     color: var(--dark-grayish-cyan);
     font-family: var(--space-mono);
     gap: 50px;
@@ -83,6 +83,11 @@ main {
     border-radius: 3px;
 }
 
+.porcentagem button:hover {
+    background-color: var(--light-grayish-cyan);
+    color: var(--very-dark-cyan);
+}
+
 input {
     width: 95%;
     font-family: var(--space-mono);
@@ -103,11 +108,23 @@ input {
     text-align: right;
 }
 
+#bill:focus {
+    outline: var(--strong-cyan) solid 2px;
+}
+
 #customizado {
     text-align: center;
     background-color: var(--very-light-grayish-cyan);
     padding-right: 0;
+    border-radius: 3px;
     width: 100%;
+}
+
+#customizado:focus {
+    text-align: right;
+    padding-right: 5%;
+    width: 84%;
+    outline: var(--strong-cyan) solid 2px;
 }
 
 #people {
@@ -117,6 +134,10 @@ input {
     background-color: var(--very-light-grayish-cyan);
     border-radius: 3px;
     text-align: right;
+}
+
+#people:focus {
+    outline: var(--strong-cyan) solid 2px;
 }
 
 .mostra {
@@ -160,6 +181,10 @@ input {
     height: 2.5rem;
     border: none;
     border-radius: 3px;
+}
+
+#reset:hover:enabled {
+    background-color: var(--light-grayish-cyan);
 }
 
 #reset:disabled {
