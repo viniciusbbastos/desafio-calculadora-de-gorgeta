@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <header>
+    <h1>S P L I<br>T T E R</h1>
+  </header>
+  <main>
+    <section class="info">
+      <div class="info-opcao">
+        <h2>Bill</h2>
+        <input type="text" name="Bill" value="0" id="bill" onfocus="limparTexto(this)" onblur="reporTexto(this)">
+      </div>
+      
+      <div class="info-opcao">
+        <h2>Select Tip %</h2>
+        <section class="porcentagem">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+        </section>
+        <section class="porcentagem">
+          <button>25%</button>
+          <button>50%</button>
+          <input type="text" name="Custom" value="Custom" id="customizado" onfocus="limparTexto(this)" onblur="reporTextoC(this)">
+        </section>
+      </div>
+    
+      <div class="info-opcao">
+        <h2>Number of People</h2>
+        <input type="text" name="People" value="0" id="people" onfocus="limparTexto(this)" onblur="reporTexto(this)">
+      </div>
+    </section>
+  
+    <section class="mostra">
+      <div>
+        <div class="mostra-gorgeta">
+          <div>
+            <h3 class="quantidade">Tip Amount</h3>
+            <p class="pessoa">/ person</p>
+          </div>
+          <p class="mostra-gorgeta-preco">$0.00</p>         
+        </div>
+        
+        <div class="mostra-gorgeta">
+          <div>
+            <h3 class="quantidade">Total</h3>
+            <p class="pessoa">/ person</p>
+          </div>
+          <p class="mostra-gorgeta-preco">$0.00</p>         
+        </div>
+      </div>
+      <button id="reset" disabled>RESET</button>
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/viniciusbbastos">Vinicius Bastos</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

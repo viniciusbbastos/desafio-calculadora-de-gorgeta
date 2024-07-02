@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+    /* cores primarias */
+    --strong-cyan: hsl(172, 67%, 45%);
+
+    /* cores secundarias */
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+
+    /* fontes */
+    --space-mono: "Space Mono", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--light-grayish-cyan);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    color: var(--dark-grayish-cyan);
+    font-family: var(--space-mono);
+    gap: 50px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: var(--dark-grayish-cyan);
+    cursor: default;
+}
+
+h2 {
+    font-size: 0.75rem;
+}
+
+main {
+    background-color: var(--white);
+    width: 60%;
+    height: 38%;
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    border-radius: 16px;
+    box-shadow: 0px 2px 10px var(--grayish-cyan);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info-opcao {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.porcentagem {
+    display: flex;
+    gap: 10px;
+}
+
+.porcentagem button {
+    background-color: var(--very-dark-cyan);
+    border: none;
+    color: var(--white);
+    font-family: var(--space-mono);
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: 3px;
+}
+
+input {
+    width: 95%;
+    font-family: var(--space-mono);
+    font-size: 1rem;
+    height: 2.5rem;
+    color: var(--grayish-cyan);
+    padding-right: 5%;
+    border: none;
+    outline: none;
+}
+
+#bill {
+    background: url("../images/icon-dollar.svg") no-repeat left;
+    background-position: 5%;
+    background-size: 0.5rem;
+    background-color: var(--very-light-grayish-cyan);
+    border-radius: 3px;
+    text-align: right;
+}
+
+#customizado {
+    text-align: center;
+    background-color: var(--very-light-grayish-cyan);
+    padding-right: 0;
+    width: 100%;
+}
+
+#people {
+    background: url("../images/icon-person.svg") no-repeat left;
+    background-position: 5%;
+    background-size: 0.5rem;
+    background-color: var(--very-light-grayish-cyan);
+    border-radius: 3px;
+    text-align: right;
+}
+
+.mostra {
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.mostra-gorgeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.mostra-gorgeta-preco {
+    color: var(--strong-cyan);
+    font-size: 2rem;
+}
+
+.quantidade {
+    font-size: 0.8rem;
+}
+
+.pessoa {
+    font-size: 0.6rem;
+    color: var(--dark-grayish-cyan);
+}
+
+#reset {
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+    font-family: var(--space-mono);
+    font-size: 1rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 3px;
+}
+
+#reset:disabled {
+    opacity: 20%;
+}
+
+.attribution { font-size: 11px; text-align: center; padding: 16px; position: fixed; bottom: 0; }
+.attribution a { color: hsl(228, 45%, 44%); }
